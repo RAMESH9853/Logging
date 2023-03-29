@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<div class="container">
+  <h3>Contact Us</h3>
+  <p>This is a garmentshop where u can find all types of garments and also give us feedback</p>
+<form name="form"method="post"=action="">
+{%csrf_token%}
+{{form.as_p}}
+<button type="submit">SUBMIT</button>
+</form>
+</div>
+
+{%endblock%}
